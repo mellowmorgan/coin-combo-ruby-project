@@ -10,16 +10,16 @@ class Coin
     @nickel=0
     @penny=0
   end
-  def count
+  def count 
     x=@amount
     until (x < 5)
-      if x > 25
+      if x >= 25
         @quarter+=1
         x-=25
-      elsif x > 10
+      elsif x >= 10
         @dime+=1
         x-=10
-      elsif x > 5
+      elsif x >= 5
         @nickel+=1
         x-=5
       end

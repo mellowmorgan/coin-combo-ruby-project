@@ -5,6 +5,7 @@ describe('#Coin') do
   obj1=Coin.new(99)
   obj2=Coin.new(99)
   obj3=Coin.new(-99)
+  obj4=Coin.new(100)
   it("should return 99 when read method called on obj1") do
     expect(obj1.amount).to(eq(99))
   end
@@ -28,5 +29,8 @@ describe('#Coin') do
   end
   it("should return true amount is positive number") do
     expect(obj1.penny).to(eq(4))
+  end
+  it("should return true amount is 100") do
+    expect(obj4.count).to(eq(true))
   end
 end
