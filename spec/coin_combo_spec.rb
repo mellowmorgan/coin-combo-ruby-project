@@ -17,4 +17,16 @@ describe('#Coin') do
   it("should return true amount is positive number") do
     expect(obj1.count).to(eq(true))
   end
+  it("should return true amount is positive number") do
+    expect(obj1.quarter).to(eq(3))
+  end
+  it("should return true amount is positive number") do
+    expect(obj1.dime).to(eq(2))
+  end
+  it("should return true amount is positive number") do
+    expect(obj1.nickel).to(eq(0))
+  end
+  it("should return true amount is positive number") do
+    expect(obj1.penny).to(eq(4))
+  end
 end
