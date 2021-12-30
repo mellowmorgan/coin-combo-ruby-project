@@ -4,7 +4,6 @@ require('./lib/coin_combo.rb')
 puts "Enter an amount of change"
 puts "Type 'quit' to exit"
 input=""
-
 while (input!='quit')
   obj1 = Coin.new(0)
   input=gets.chomp
